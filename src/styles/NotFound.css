@@ -1,0 +1,39 @@
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+  }
+  
+  .not-found-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff5733; 
+    margin-bottom: 20px;
+  }
+  
+  .not-found-message {
+    font-size: 1.25rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .not-found-container h1,
+  .not-found-container p {
+    margin: 0;
+  }
+  
+  /* Optional: Add a decorative image or illustration */
+  .not-found-container:before {
+    content: '⚠️';
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+  

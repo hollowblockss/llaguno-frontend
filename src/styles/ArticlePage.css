@@ -1,0 +1,25 @@
+.article-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.article-page h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.article-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.article-page p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}

@@ -1,0 +1,73 @@
+.article-list-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    padding: 20px;
+    height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+
+  .article-list-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+
+  .article-list-container {
+    width: 100%;
+    max-width: 900px; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+  }
+  
+  .article-item {
+    display: block;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .article-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Article title styling */
+  .article-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .article-title:hover {
+    color: #ff5733; /* Change color on hover */
+  }
+  
+  /* Article preview text */
+  .article-preview {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    max-height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Optional: Add spacing at the bottom of each article */
+  .article-item:last-child {
+    margin-bottom: 40px;
+  }
+  
