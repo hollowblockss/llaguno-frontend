@@ -1,5 +1,5 @@
 import './App.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'; // Step 1
 
 // Layouts
 import Layout from './components/Layout';
@@ -23,6 +23,10 @@ import DashArticleListPage from './pages/DashboardPages/DashArticleListPage';
 const routes = [
   {
     path: '/',
+    element: <Navigate to="/login" replace />, // Step 2: Redirect to login
+  },
+  {
+    path: '/landing',
     element: <Layout />,
     errorElement: <NotFoundPage />,
     children: [
@@ -97,9 +101,9 @@ function App() {
   return (
     <div>
       <RouterProvider router={router} />
-      
     </div>
   );
 }
 
 export default App;
+
