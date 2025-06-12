@@ -29,7 +29,7 @@ function LoginPage() {
               type="email"
               id="email"
               className="form-input"
-              placeholder="banana@minion.com"
+              placeholder="name@minion.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
